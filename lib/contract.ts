@@ -1,0 +1,6 @@
+export const MEDIA_CONTRACT_ADDRESS =
+  process.env.NEXT_PUBLIC_MEDIA_CONTRACT_ADDRESS || '0x0000000000000000000000000000000000000000';
+
+export const MEDIA_CONTRACT_ABI: any[] = [
+// Paste ABI here after deploy
+];
