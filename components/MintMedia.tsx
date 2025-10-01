@@ -26,8 +26,14 @@ export default function MintMedia() {
       const signer = await provider.getSigner();
       const contract = new ethers.Contract(MEDIA_CONTRACT_ADDRESS, MEDIA_CONTRACT_ABI, signer);
 
-      alert('Mint wired. Paste address + ABI in lib/contract.ts, then uncomment the correct call.');
+      // === Example real mint ===
+      // const tokenURI = 'ipfs://YOUR_CID_HERE';
+      // const value = 0n; 
+      // const response = await contract.mint(tokenURI, { value });
+      // await response.wait();
+      // setTx(response.hash);
 
+      alert('Mint wired. Paste address + ABI in lib/contract.ts, then uncomment the real mint call.');
     } catch (e: any) {
       console.error(e);
       alert(e?.shortMessage || e?.message || 'Mint failed');
